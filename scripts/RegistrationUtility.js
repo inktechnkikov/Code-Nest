@@ -25,13 +25,13 @@ function ajaxError() {
         let password = $('#passInput').val();
         let emailAddress = $('#emailAddress').val();
 
-        if (username=="") {
+        if (username==="") {
             showInfo("Try again.Username name cant be empty");
         }
         else if (password.length <= 4) {
             showInfo("The password must be minimum 4 symbols");
         }
-        else if(emailAddress == ""){
+        else if(emailAddress === ""){
            validateEmailAddress();
         }
         else {
